@@ -1,6 +1,9 @@
 module "vpc" {
   // Source of the module
   source = "terraform-aws-modules/vpc/aws"
+  providers = {
+    aws = aws.sa
+  }
 
   name = "my-vpc"
   cidr = "10.0.0.0/16"
