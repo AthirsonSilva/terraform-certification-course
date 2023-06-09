@@ -12,8 +12,8 @@ module "vpc" {
   azs = ["sa-east-1a", "sa-east-1b", "sa-east-1c"]
 
   // CIDR Blocks for Subnets (must be within VPC CIDR block)
-  private_subnets = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
-  public_subnets  = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
+  private_subnets = ["10.0.1.0/24"]
+  public_subnets  = ["10.0.101.0/24"]
 
   // NAT gateway on public subnets (default true)
   enable_nat_gateway = true

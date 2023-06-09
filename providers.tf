@@ -4,6 +4,15 @@ terraform {
       source = "hashicorp/aws"
     }
   }
+
+  # backend "remote" {
+  #   hostname     = "app.terraform.io"
+  #   organization = "athirson"
+
+  #   workspaces {
+  #     name = "getting-started"
+  #   }
+  # }
 }
 
 provider "aws" {
